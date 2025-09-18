@@ -1,9 +1,6 @@
+import AppRoutes from "./components/AppRoutes";
 function App() {
-    return (
-        <>
-            <h1>xin chao</h1>
-        </>
-    );
+    return <AppRoutes />;
 }
 
 export default App;
