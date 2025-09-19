@@ -1,8 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop";
 import DefaultLayout from "../../layout/DefaultLayout";
 import AuthLayout from "../../layout/AuthLayout";
+import AdminLayout from "../../layout/AdminLayout";
 
 import Home from "../../page/Home";
 import About from "../../page/About";
@@ -12,13 +13,14 @@ import Contact from "../../page/Contact";
 import Privacy from "../../page/Privacy";
 import Login from "../../page/Login";
 import Register from "../../page/Register";
-// import Dashboard from "../../page/Dashboard";
-// import Users from "../../page/Users";
-// import Settings from "../../page/Settings";
-// import NotFound from "../../page/NotFound";
+import Dashboard from "../../page/Dashboard";
+import Users from "../../page/Users";
+import Settings from "../../page/Settings";
+import NotFound from "../../page/NotFound";
 function AppRoutes() {
     return (
         <Router>
+            <ScrollToTop />
             <Routes>
                 {/* Default Layout Routes */}
                 <Route element={<DefaultLayout />}>
@@ -37,14 +39,14 @@ function AppRoutes() {
                 </Route>
 
                 {/* Admin Layout Routes */}
-                {/* <Route path="admin" element={<AdminLayout />}>
+                <Route path="admin" element={<AdminLayout />}>
                     <Route index element={<Dashboard />} />
                     <Route path="users" element={<Users />} />
                     <Route path="settings" element={<Settings />} />
-                </Route> */}
+                </Route>
 
                 {/* NotFound Route */}
-                {/* <Route path="*" element={<NotFound />} /> */}
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </Router>
     );

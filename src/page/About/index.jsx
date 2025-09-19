@@ -1,7 +1,7 @@
 function About() {
     return (
         <>
-            <h1>Home page</h1>
+            <h1>About page</h1>
             <div>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Perspiciatis illum maxime assumenda eius quod praesentium est

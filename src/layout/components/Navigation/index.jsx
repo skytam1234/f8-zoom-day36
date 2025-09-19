@@ -40,7 +40,9 @@ function Navigation() {
     const [params, setParams] = React.useState(param.pathname);
 
     React.useEffect(() => {
-        setParams(param.pathname);
+        const path = param.pathname;
+        const pathPara = path.split("/")[1];
+        setParams(`/${pathPara}`);
     }, [param, setParams]);
 
     return (

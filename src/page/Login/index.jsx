@@ -2,7 +2,7 @@ function Login() {
     return (
         <>
             <div className="contaiter">
-                <h1>Home page</h1>
+                <h1>Login page</h1>
                 <div>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Perspiciatis illum maxime assumenda eius quod praesentium
